@@ -1,0 +1,25 @@
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.name {
+    color: #2E86C1;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    grid-column-start: 2;
+    background-color: antiquewhite;
+}
+
+.name::after {
+    content: '';
+    height: 4px;
+    left: 0;
+    margin-top: 22px;
+    position: absolute;
+    width: 80%;
+    margin-left: 100px;
+    z-index: -1;
+    background-color: red;
+}
